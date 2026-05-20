@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/lib/auth'
 
@@ -28,6 +28,8 @@ export async function PATCH(
     } else {
       return NextResponse.json({ error: 'Invalid booking ID format' }, { status: 400 })
     }
+
+    const supabase = getSupabase()
 
     const { error } = await supabase
       .from(tableName)
