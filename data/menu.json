@@ -1,0 +1,254 @@
+[
+  {
+    "id": "m01",
+    "name": "Virgin Mojito",
+    "category": "Mocktails",
+    "description": "Fresh mint, lime, and soda — the classic refresher with a 90ML twist.",
+    "price": 129,
+    "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "m02",
+    "name": "Blue Lagoon",
+    "category": "Mocktails",
+    "description": "Electric blue curaçao with citrus and crushed ice. Bold and beautiful.",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "m03",
+    "name": "Tropical Sunset",
+    "category": "Mocktails",
+    "description": "Mango, orange, and grenadine layered to look like a sunset in a glass.",
+    "price": 149,
+    "image": "/images/menu/tropical-sunset.webp",
+    "tags": ["new"]
+  },
+  {
+    "id": "m04",
+    "name": "Mango Tango",
+    "category": "Mocktails",
+    "description": "Fresh Alphonso mango blended with passion fruit and a hint of lime.",
+    "price": 139,
+    "image": "/images/menu/mango-tango.webp",
+    "tags": []
+  },
+  {
+    "id": "m05",
+    "name": "Green Apple Fizz",
+    "category": "Mocktails",
+    "description": "Tangy green apple with sparkling soda and mint. Crisp and refreshing.",
+    "price": 129,
+    "image": "/images/menu/green-apple-fizz.webp",
+    "tags": []
+  },
+  {
+    "id": "m06",
+    "name": "Strawberry Blush",
+    "category": "Mocktails",
+    "description": "Sweet strawberry puree with cream soda and a pink sugar rim.",
+    "price": 149,
+    "image": "/images/menu/strawberry-blush.webp",
+    "tags": ["new"]
+  },
+  {
+    "id": "m07",
+    "name": "Pink Paradise",
+    "category": "Mocktails",
+    "description": "Rose-infused watermelon with elderflower and crushed ice.",
+    "price": 159,
+    "image": "/images/menu/pink-paradise.webp",
+    "tags": []
+  },
+  {
+    "id": "m08",
+    "name": "Drunkyard Special",
+    "category": "Mocktails",
+    "description": "Our signature mix — a secret blend of 5 fruits with a spicy kick. House favorite.",
+    "price": 179,
+    "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80",
+    "tags": ["bestseller", "spicy"]
+  },
+  {
+    "id": "s01",
+    "name": "Oreo Shake",
+    "category": "Shakes",
+    "description": "Crushed Oreo cookies blended with vanilla ice cream and chocolate drizzle.",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75bf699?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "s02",
+    "name": "KitKat Shake",
+    "category": "Shakes",
+    "description": "Chunky KitKat blended into creamy chocolate milkshake perfection.",
+    "price": 159,
+    "image": "/images/menu/kitkat-shake.webp",
+    "tags": []
+  },
+  {
+    "id": "s03",
+    "name": "Nutella Shake",
+    "category": "Shakes",
+    "description": "Rich Nutella hazelnut spread swirled into cold creamy milk. Pure indulgence.",
+    "price": 169,
+    "image": "/images/menu/nutella-shake.webp",
+    "tags": ["new"]
+  },
+  {
+    "id": "s04",
+    "name": "Cold Coffee Classic",
+    "category": "Shakes",
+    "description": "Strong espresso blended with ice cream and milk. Smooth caffeine fix.",
+    "price": 119,
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "s05",
+    "name": "Butterscotch Shake",
+    "category": "Shakes",
+    "description": "Caramelized butterscotch with vanilla ice cream and crunchy bits.",
+    "price": 139,
+    "image": "/images/menu/butterscotch-shake.webp",
+    "tags": []
+  },
+  {
+    "id": "s06",
+    "name": "Belgian Chocolate",
+    "category": "Shakes",
+    "description": "Premium Belgian dark chocolate melted into thick, creamy shake heaven.",
+    "price": 159,
+    "image": "/images/menu/belgian-chocolate.webp",
+    "tags": []
+  },
+  {
+    "id": "j01",
+    "name": "Fresh Orange Juice",
+    "category": "Juices",
+    "description": "Hand-squeezed orange juice, no sugar added. Pure and natural.",
+    "price": 89,
+    "image": "/images/menu/orange-juice.webp",
+    "tags": []
+  },
+  {
+    "id": "j02",
+    "name": "Watermelon Splash",
+    "category": "Juices",
+    "description": "Chilled watermelon blended with mint and a squeeze of lime.",
+    "price": 99,
+    "image": "/images/menu/watermelon-splash.webp",
+    "tags": []
+  },
+  {
+    "id": "j03",
+    "name": "Mixed Fruit Punch",
+    "category": "Juices",
+    "description": "Seasonal fruits blended together for a vitamin-packed punch.",
+    "price": 109,
+    "image": "/images/menu/mixed-fruit.webp",
+    "tags": []
+  },
+  {
+    "id": "j04",
+    "name": "Pineapple Punch",
+    "category": "Juices",
+    "description": "Tangy pineapple with a hint of ginger. Bold and tropical.",
+    "price": 99,
+    "image": "/images/menu/pineapple-punch.webp",
+    "tags": []
+  },
+  {
+    "id": "j05",
+    "name": "Sweet Lime Soda",
+    "category": "Juices",
+    "description": "Fresh mosambi with soda, salt, and a dash of chaat masala.",
+    "price": 79,
+    "image": "/images/menu/sweet-lime.webp",
+    "tags": []
+  },
+  {
+    "id": "n01",
+    "name": "Classic French Fries",
+    "category": "Snacks",
+    "description": "Golden crispy fries with signature 90ML seasoning.",
+    "price": 99,
+    "image": "/images/menu/french-fries.webp",
+    "tags": []
+  },
+  {
+    "id": "n02",
+    "name": "Loaded Nachos",
+    "category": "Snacks",
+    "description": "Crunchy nachos topped with cheese sauce, jalapeños, and salsa.",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&q=80",
+    "tags": ["bestseller", "spicy"]
+  },
+  {
+    "id": "n03",
+    "name": "Veg Burger",
+    "category": "Snacks",
+    "description": "Crispy aloo tikki patty with lettuce, cheese, and tangy mayo.",
+    "price": 129,
+    "image": "/images/menu/veg-burger.webp",
+    "tags": []
+  },
+  {
+    "id": "n04",
+    "name": "Paneer Tikka Wrap",
+    "category": "Snacks",
+    "description": "Spicy tandoori paneer wrapped in soft tortilla with mint chutney.",
+    "price": 149,
+    "image": "/images/menu/paneer-wrap.webp",
+    "tags": ["spicy"]
+  },
+  {
+    "id": "n05",
+    "name": "Pasta Alfredo",
+    "category": "Snacks",
+    "description": "Creamy white sauce pasta with herbs and parmesan.",
+    "price": 159,
+    "image": "/images/menu/pasta-alfredo.webp",
+    "tags": []
+  },
+  {
+    "id": "n06",
+    "name": "Garlic Bread",
+    "category": "Snacks",
+    "description": "Toasted garlic bread with herb butter and melted cheese.",
+    "price": 99,
+    "image": "/images/menu/garlic-bread.webp",
+    "tags": []
+  },
+  {
+    "id": "c01",
+    "name": "Student Combo",
+    "category": "Combos",
+    "description": "Any shake + french fries. Show student ID for this special price.",
+    "price": 99,
+    "image": "/images/menu/student-combo.webp",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": "c02",
+    "name": "Couple Combo",
+    "category": "Combos",
+    "description": "2 signature mocktails + loaded nachos. Perfect for date night.",
+    "price": 349,
+    "image": "/images/menu/couple-combo.webp",
+    "tags": ["new"]
+  },
+  {
+    "id": "c03",
+    "name": "Squad Combo",
+    "category": "Combos",
+    "description": "4 shakes + 2 snacks of your choice. Bring the whole gang.",
+    "price": 599,
+    "image": "/images/menu/squad-combo.webp",
+    "tags": []
+  }
+]
