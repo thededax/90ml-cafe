@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 
 function generateBookingId(prefix: string) {
   return `${prefix}-${Math.floor(10000 + Math.random() * 90000)}`
@@ -15,6 +15,8 @@ export async function POST(request: Request) {
     const itemsSummary = items
       .map((item: { name: string; quantity: number; price: number }) => `${item.name} x${item.quantity}`)
       .join(', ')
+
+    const supabase = getSupabase()
 
     const { error } = await supabase
       .from('preorders')

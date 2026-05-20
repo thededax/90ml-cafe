@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 
 function generateBookingId(prefix: string) {
   return `${prefix}-${Math.floor(10000 + Math.random() * 90000)}`
@@ -12,6 +12,8 @@ export async function POST(request: Request) {
 
     const bookingId = generateBookingId('TB')
     const timestamp = new Date().toISOString()
+
+    const supabase = getSupabase()
 
     const { error } = await supabase
       .from('table_bookings')
