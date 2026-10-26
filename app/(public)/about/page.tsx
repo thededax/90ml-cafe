@@ -39,15 +39,20 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[40vh] sm:h-[60vh] bg-black flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-teal/5 to-transparent" />
-        <h1 className="font-bebas text-5xl sm:text-6xl md:text-[80px] text-white relative z-10">
-          OUR STORY
-        </h1>
+      <section className="relative h-[40vh] sm:h-[50vh] bg-espresso text-on-dark flex items-center justify-center border-b border-latte/15">
+        <div className="absolute inset-0 bg-gradient-to-b from-teal/10 via-espresso to-espresso" />
+        <div className="relative z-10 text-center space-y-2">
+          <span className="font-mono text-xs font-bold text-kinetic-lime uppercase tracking-widest">
+            ⚡ OUR STORY & CRAFT
+          </span>
+          <h1 className="font-display font-extrabold text-5xl sm:text-6xl md:text-7xl text-oat-cream">
+            Born in Bhagalpur.
+          </h1>
+        </div>
       </section>
 
       {/* Cafe Story */}
-      <section className="bg-black py-12 md:py-24">
+      <section className="bg-espresso text-on-dark py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             {/* Image */}
@@ -101,14 +106,14 @@ export default function AboutPage() {
       </section>
 
       {/* Vision + Mission */}
-      <section className="bg-black py-12 md:py-24">
+      <section className="bg-espresso text-on-dark py-12 md:py-24 border-t border-latte/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-[#0A0A0A] border-l-4 border-yellow rounded-lg p-6 md:p-8"
+              className="bg-roast-elevated border-l-4 border-yellow rounded-2xl p-6 md:p-8 border border-latte/15"
             >
               <h3 className="font-bebas text-3xl md:text-4xl text-yellow mb-3 md:mb-4">Our Vision</h3>
               <p className="font-poppins font-light text-xs md:text-sm text-white/70 leading-relaxed">
@@ -121,11 +126,11 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-[#0A0A0A] border-l-4 border-teal rounded-lg p-6 md:p-8"
+              className="bg-roast-elevated border-l-4 border-teal rounded-2xl p-6 md:p-8 border border-latte/15"
             >
               <h3 className="font-bebas text-3xl md:text-4xl text-teal mb-3 md:mb-4">Our Mission</h3>
               <p className="font-poppins font-light text-xs md:text-sm text-white/70 leading-relaxed">
-                To serve crafted mocktails and snacks in an atmosphere that inspires. We make every visit special — from student combos at ₹99 to premium birthday celebrations — because everyone deserves the Drunkyard experience.
+                To serve crafted mocktails, specialty 90ml pours and snacks in an atmosphere that inspires. We make every visit special — from student combos at ₹99 to premium birthday celebrations.
               </p>
             </motion.div>
           </div>
@@ -133,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why We Started */}
-      <section className="bg-black py-12 md:py-24">
+      <section className="bg-espresso text-on-dark py-12 md:py-24 border-t border-latte/10">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-bebas text-4xl sm:text-5xl md:text-7xl text-white text-center mb-10 md:mb-16">
             WHY WE STARTED

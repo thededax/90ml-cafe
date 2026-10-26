@@ -2,7 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ============ CUSTOM BASE STYLES ============ */
+/* ============ 90ML CAFE DESIGN TOKENS ============ */
+:root {
+  --bg-espresso: #160804;
+  --bg-roast-elevated: #26110B;
+  --bg-oat-cream: #FBEBDE;
+  --bg-latte: #E9CBB9;
+  --bg-card-white: #FFFDF9;
+  --accent-crema: #A84B22;
+  --accent-crema-hover: #8F3A15;
+  --accent-caramel: #CC9265;
+  --accent-kinetic-lime: #E2FC07;
+  --brand-yellow: #E8EA00;
+  --brand-teal: #17B59A;
+  --text-on-cream: #160804;
+  --text-on-dark: #FBEBDE;
+  --border-cafe: rgba(99, 38, 21, 0.16);
+  --border-espresso: rgba(251, 235, 222, 0.12);
+}
+
 @layer base {
   * {
     margin: 0;
@@ -12,37 +30,46 @@
 
   html {
     scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   body {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--bg-espresso);
+    color: var(--text-on-dark);
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: #E8EA00;
-    color: #000000;
+    background-color: var(--accent-kinetic-lime);
+    color: #160804;
   }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #000000;
+    background: #160804;
   }
   ::-webkit-scrollbar-thumb {
-    background: #E8EA0040;
+    background: #A84B22;
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #E8EA0080;
+    background: #CC9265;
   }
 }
 
 /* ============ CUSTOM UTILITIES ============ */
 @layer utilities {
+  .text-gradient-crema {
+    background: linear-gradient(135deg, #FBEBDE 0%, #CC9265 50%, #A84B22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .text-gradient-yellow-teal {
     background: linear-gradient(135deg, #E8EA00, #17B59A);
     -webkit-background-clip: text;
@@ -50,53 +77,69 @@
     background-clip: text;
   }
 
+  .glow-lime {
+    box-shadow: 0 0 24px rgba(226, 252, 7, 0.35);
+  }
+
+  .glow-crema {
+    box-shadow: 0 0 28px rgba(168, 75, 34, 0.35);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 24px rgba(23, 181, 154, 0.35);
+  }
+
   .glow-yellow {
     box-shadow: 0 0 20px rgba(232, 234, 0, 0.4);
   }
 
-  .glow-teal {
-    box-shadow: 0 0 20px rgba(23, 181, 154, 0.4);
-  }
-
-  .border-glow-yellow {
-    box-shadow: 0 0 30px rgba(232, 234, 0, 0.1);
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
   }
 }
 
-/* ============ ANIMATIONS ============ */
-@keyframes underline-sweep {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+/* ============ KINETIC MARQUEE ============ */
+.marquee-wrapper {
+  overflow: hidden;
+  display: flex;
+  user-select: none;
+  white-space: nowrap;
 }
 
-@keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.marquee-content {
+  display: flex;
+  flex-shrink: 0;
+  animation: kinetic-marquee 28s linear infinite;
+  will-change: transform;
 }
 
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.marquee-wrapper:hover .marquee-content {
+  animation-play-state: paused;
 }
 
-@keyframes zoom-in {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
+@keyframes kinetic-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+  100% {
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
-/* Nav link hover underline */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-content {
+    animation: none;
+    transform: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============ NAVIGATION & EFFECTS ============ */
 .nav-link {
   position: relative;
 }
@@ -107,70 +150,60 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #E8EA00;
+  background-color: var(--accent-kinetic-lime);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   transform: scaleX(1);
 }
 
-/* Marquee */
-.marquee-track {
-  display: flex;
-  animation: marquee 20s linear infinite;
-}
-.marquee-track:hover {
-  animation-play-state: paused;
-}
-
-/* WhatsApp pulse */
+/* WhatsApp Pulse */
 .whatsapp-pulse::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: 50%;
   background: #25D366;
-  animation: pulse-ring 3s ease-out infinite;
+  animation: pulse-ring 2.8s ease-out infinite;
   z-index: -1;
 }
 
-/* Image hover overlay */
-.image-hover-overlay {
-  position: relative;
-  overflow: hidden;
-}
-.image-hover-overlay::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.image-hover-overlay:hover::after {
-  opacity: 1;
-  box-shadow: inset 0 0 0 3px #E8EA00;
-}
-
 @keyframes pulse-ring {
-  0% { transform: scale(0.8); opacity: 1; }
-  100% { transform: scale(2); opacity: 0; }
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
 }
 
-/* Slide-over panel */
-.slide-over-enter {
-  animation: slide-in-right 0.3s ease forwards;
+/* Slide-over Drawer Animations */
+.drawer-enter {
+  animation: drawer-in 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-.slide-over-exit {
-  animation: slide-out-right 0.3s ease forwards;
+.drawer-exit {
+  animation: drawer-out 0.22s ease-in forwards;
 }
-@keyframes slide-in-right {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+
+@keyframes drawer-in {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
-@keyframes slide-out-right {
-  from { transform: translateX(0); }
-  to { transform: translateX(100%); }
+
+@keyframes drawer-out {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
 }

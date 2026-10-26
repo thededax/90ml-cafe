@@ -56,22 +56,29 @@ export default function GalleryPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[40vh] bg-black flex items-center justify-center">
-        <h1 className="font-bebas text-6xl md:text-[80px] text-yellow">
-          THE VIBE GALLERY
-        </h1>
+      <section className="relative h-[35vh] sm:h-[45vh] bg-espresso text-on-dark flex items-center justify-center border-b border-latte/15">
+        <div className="text-center relative z-10 space-y-2">
+          <span className="font-mono text-xs font-bold text-kinetic-lime uppercase tracking-widest">
+            ⚡ INSTAGRAM VIBES & MEMORIES
+          </span>
+          <h1 className="font-display font-extrabold text-5xl sm:text-6xl md:text-7xl text-oat-cream">
+            The 90ml Vibe Gallery
+          </h1>
+        </div>
       </section>
 
       {/* Filter Tabs */}
-      <div className="sticky top-[72px] z-30 bg-black/90 backdrop-blur-xl border-b border-white/5">
+      <div className="sticky top-[76px] z-30 bg-espresso/95 backdrop-blur-xl border-b border-latte/15">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
             {filterTabs.map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveFilter(tab)}
-                className={`font-poppins font-medium text-sm uppercase tracking-wider px-5 py-2.5 rounded whitespace-nowrap transition-all duration-200 ${
-                  activeFilter === tab ? 'bg-yellow text-black' : 'text-white hover:text-yellow'
+                className={`font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2 rounded-xl whitespace-nowrap transition-all duration-200 ${
+                  activeFilter === tab
+                    ? 'bg-kinetic-lime text-espresso shadow-md font-bold'
+                    : 'bg-roast-elevated text-oat-cream hover:bg-latte/20 border border-latte/15'
                 }`}
               >
                 {tab}
@@ -82,7 +89,7 @@ export default function GalleryPage() {
       </div>
 
       {/* Masonry Grid */}
-      <section className="bg-black py-16">
+      <section className="bg-espresso py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="columns-2 md:columns-3 gap-3 space-y-3">
             <AnimatePresence>

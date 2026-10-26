@@ -2,6 +2,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/layout/WhatsAppButton'
 import MobileBottomBar from '@/components/layout/MobileBottomBar'
+import OrderTrayDrawer from '@/components/layout/OrderTrayDrawer'
 
 export default function PublicLayout({
   children,
@@ -15,6 +16,7 @@ export default function PublicLayout({
       <Footer />
       <WhatsAppButton />
       <MobileBottomBar />
+      <OrderTrayDrawer />
     </>
   )
 }

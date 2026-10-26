@@ -1,254 +1,470 @@
 [
   {
+    "id": "cf01",
+    "name": "90ml House Signature Pour",
+    "category": "Coffee & Chai",
+    "description": "Our defining craft experience: triple-ristretto extraction with velvet crema and rich cocoa body. Measured to exact 90ml perfection.",
+    "price": 129,
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80",
+    "tags": ["bestseller", "signature"],
+    "temperature": "hot",
+    "tastingNotes": "Dark Cocoa • Velvet Crema • 90ml Ristretto",
+    "options": ["Hot Velvet", "Iced Signature"]
+  },
+  {
+    "id": "cf02",
+    "name": "Artisanal Cold Brew On Tap",
+    "category": "Coffee & Chai",
+    "description": "Slow-steeped for 16 hours from single-origin Arabica beans. Exceptionally smooth, low acidity, naturally sweet finish.",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Black Cherry • Caramel • Zero Bitterness",
+    "options": ["Classic Black", "Oat Milk Splash"]
+  },
+  {
+    "id": "cf03",
+    "name": "Velvet Espresso Doppio (60ml)",
+    "category": "Coffee & Chai",
+    "description": "Double espresso shot pulling balanced notes of roasted hazelnut and dark chocolate. The daily fuel for remote workers.",
+    "price": 79,
+    "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80",
+    "tags": ["signature"],
+    "temperature": "hot",
+    "tastingNotes": "Roasted Hazelnut • Honey • Balanced Crema",
+    "options": ["Hot Doppio", "Iced Americano"]
+  },
+  {
+    "id": "cf04",
+    "name": "Classic Espresso Solo (30ml)",
+    "category": "Coffee & Chai",
+    "description": "Single-origin focused shot. Dense crema with intense dark chocolate aromatics for immediate clarity.",
+    "price": 49,
+    "image": "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Dark Cocoa • Intense • Pure Crema",
+    "options": ["Single 30ml"]
+  },
+  {
+    "id": "cf05",
+    "name": "Hot Cappuccino / Classic Latte",
+    "category": "Coffee & Chai",
+    "description": "Freshly pulled espresso topped with micro-foamed steamed milk and delicate dusting of cocoa powder.",
+    "price": 45,
+    "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "hot",
+    "tastingNotes": "Steamed Milk • Silky Crema • Balanced",
+    "options": ["Regular", "Strong Shot +₹15"]
+  },
+  {
+    "id": "cf06",
+    "name": "Caramel Velvet Coffee",
+    "category": "Coffee & Chai",
+    "description": "Espresso infused with butterscotch caramel drizzle and warm foamed milk. Comfort in a cup.",
+    "price": 55,
+    "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&q=80",
+    "tags": ["new"],
+    "temperature": "hot",
+    "tastingNotes": "Warm Toffee • Caramel • Brown Sugar",
+    "options": ["Hot", "Iced"]
+  },
+  {
+    "id": "cf07",
+    "name": "Hot Chocolate Mocha",
+    "category": "Coffee & Chai",
+    "description": "Rich artisanal molten dark chocolate blended with a shot of espresso and velvet steamed milk.",
+    "price": 65,
+    "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Belgian Cocoa • Espresso • Marshmallow Notes",
+    "options": ["Hot", "Extra Dark"]
+  },
+  {
+    "id": "cf08",
+    "name": "Masala Irani Chai",
+    "category": "Coffee & Chai",
+    "description": "Slow-simmered Assam black tea infused with hand-crushed green cardamom, fresh ginger, and rich creamy milk.",
+    "price": 25,
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "hot",
+    "tastingNotes": "Crushed Cardamom • Ginger • Creamy Milk",
+    "options": ["Regular Cup", "Kadak Strong"]
+  },
+  {
+    "id": "cf09",
+    "name": "Kesaria Kadak Chai",
+    "category": "Coffee & Chai",
+    "description": "Fragrant saffron threads brewed with whole spices and thick tea liquor. A regal Bhagalpur favorite.",
+    "price": 30,
+    "image": "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Kashmiri Saffron • Spiced Liquor • Rich",
+    "options": ["Regular Cup", "Double Kesaria"]
+  },
+  {
+    "id": "cf10",
+    "name": "Cold Coffee with Ice-Cream",
+    "category": "Coffee & Chai",
+    "description": "Thick chilled espresso milkshake topped with a generous scoop of artisanal vanilla bean ice cream and chocolate swirl.",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Vanilla Bean • Bold Espresso • Chocolate Drizzle",
+    "options": ["Single Scoop", "Extra Scoop +₹25"]
+  },
+  {
     "id": "m01",
     "name": "Virgin Mojito",
     "category": "Mocktails",
-    "description": "Fresh mint, lime, and soda — the classic refresher with a 90ML twist.",
+    "description": "Fresh garden mint, hand-pressed Persian lime, and sparkling effervescence with a signature 90ml citrus twist.",
     "price": 129,
     "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&q=80",
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Crisp Garden Mint • Zesty Lime • Crushed Ice",
+    "options": ["Classic", "90ml Signature Boost"]
   },
   {
     "id": "m02",
     "name": "Blue Lagoon",
     "category": "Mocktails",
-    "description": "Electric blue curaçao with citrus and crushed ice. Bold and beautiful.",
+    "description": "Electric blue curaçao with Mediterranean citrus, crushed crystal ice, and a fizzy lemon sparkle.",
     "price": 149,
     "image": "https://images.unsplash.com/photo-1587223075055-82e9a937ddff?auto=format&fit=crop&q=80",
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Electric Citrus • Blue Curacao • Tangy Fizz",
+    "options": ["Standard", "Extra Mint"]
   },
   {
     "id": "m03",
     "name": "Tropical Sunset",
     "category": "Mocktails",
-    "description": "Mango, orange, and grenadine layered to look like a sunset in a glass.",
+    "description": "Alphonso mango nectar, fresh orange juice, and rich grenadine layered into a dramatic glowing sunset in a glass.",
     "price": 149,
-    "image": "/images/menu/tropical-sunset.webp",
-    "tags": ["new"]
+    "image": "/images/hero-bg.jpg",
+    "tags": ["new", "signature"],
+    "temperature": "iced",
+    "tastingNotes": "Layered Mango • Orange • Pomegranate Grenadine",
+    "options": ["Standard", "Extra Chilled"]
   },
   {
     "id": "m04",
     "name": "Mango Tango",
     "category": "Mocktails",
-    "description": "Fresh Alphonso mango blended with passion fruit and a hint of lime.",
+    "description": "Alphonso mango puree blended with passion fruit drizzle, crushed mint, and a hint of Himalayan rock salt.",
     "price": 139,
-    "image": "/images/menu/mango-tango.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Alphonso Mango • Passionfruit • Lime Zing",
+    "options": ["Standard", "Extra Pulp"]
   },
   {
     "id": "m05",
     "name": "Green Apple Fizz",
     "category": "Mocktails",
-    "description": "Tangy green apple with sparkling soda and mint. Crisp and refreshing.",
+    "description": "Crisp Granny Smith apple nectar shaken with mint sprigs, lime wedge, and sparkling carbonation.",
     "price": 129,
-    "image": "/images/menu/green-apple-fizz.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Tart Green Apple • Carbonated Fizz • Mint",
+    "options": ["Standard", "Less Sweet"]
   },
   {
     "id": "m06",
     "name": "Strawberry Blush",
     "category": "Mocktails",
-    "description": "Sweet strawberry puree with cream soda and a pink sugar rim.",
+    "description": "Sweet hill-grown strawberry puree shaken with cream soda, fresh lemon, and a pink confectioner's rim.",
     "price": 149,
-    "image": "/images/menu/strawberry-blush.webp",
-    "tags": ["new"]
+    "image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?auto=format&fit=crop&q=80",
+    "tags": ["new"],
+    "temperature": "iced",
+    "tastingNotes": "Wild Strawberry • Pink Soda • Berry Sweet",
+    "options": ["Standard", "Extra Berries"]
   },
   {
     "id": "m07",
     "name": "Pink Paradise",
     "category": "Mocktails",
-    "description": "Rose-infused watermelon with elderflower and crushed ice.",
+    "description": "Damascus rose essence infused with chilled watermelon crush and botanical elderflower aroma.",
     "price": 159,
-    "image": "/images/menu/pink-paradise.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Damascus Rose • Watermelon • Floral Finish",
+    "options": ["Standard", "Less Sugar"]
   },
   {
     "id": "m08",
     "name": "Drunkyard Special",
     "category": "Mocktails",
-    "description": "Our signature mix — a secret blend of 5 fruits with a spicy kick. House favorite.",
+    "description": "Our signature house alchemy — a top-secret blend of 5 seasonal tropical fruits with a mild chaat chili kick.",
     "price": 179,
     "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&q=80",
-    "tags": ["bestseller", "spicy"]
+    "tags": ["bestseller", "spicy"],
+    "temperature": "iced",
+    "tastingNotes": "5 Fruit Secret Blend • Chili Salt Rim • House Secret",
+    "options": ["House Signature", "Extra Spicy Kick 🌶"]
   },
   {
     "id": "s01",
     "name": "Oreo Shake",
     "category": "Shakes",
-    "description": "Crushed Oreo cookies blended with vanilla ice cream and chocolate drizzle.",
+    "description": "Crushed Oreo cookies churned with rich dairy cream, vanilla ice cream, and Belgian dark chocolate drizzle.",
     "price": 149,
     "image": "https://images.unsplash.com/photo-1572490122747-3968b75bf699?auto=format&fit=crop&q=80",
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Crunchy Cookies • Heavy Cream • Dark Cocoa",
+    "options": ["Thick Shake", "Oreo Crumble Boost"]
   },
   {
     "id": "s02",
     "name": "KitKat Shake",
     "category": "Shakes",
-    "description": "Chunky KitKat blended into creamy chocolate milkshake perfection.",
+    "description": "Crispy wafer KitKat bars blended directly into cold chocolate milk and topped with wafer fingers.",
     "price": 159,
-    "image": "/images/menu/kitkat-shake.webp",
-    "tags": []
+    "image": "/images/generated/cat-shakes.png",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Crispy Chocolate Wafer • Creamy Milk • Rich",
+    "options": ["Thick Shake", "Extra KitKat Finger"]
   },
   {
     "id": "s03",
     "name": "Nutella Shake",
     "category": "Shakes",
-    "description": "Rich Nutella hazelnut spread swirled into cold creamy milk. Pure indulgence.",
+    "description": "Pure Italian hazelnut-cocoa spread swirled onto cold frosted glass and whipped into thick perfection.",
     "price": 169,
-    "image": "/images/menu/nutella-shake.webp",
-    "tags": ["new"]
+    "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&q=80",
+    "tags": ["new"],
+    "temperature": "iced",
+    "tastingNotes": "Hazelnut Cocoa • Roasted Nut • Velvet",
+    "options": ["Thick Shake", "Extra Nutella Swirl"]
   },
   {
     "id": "s04",
     "name": "Cold Coffee Classic",
     "category": "Shakes",
-    "description": "Strong espresso blended with ice cream and milk. Smooth caffeine fix.",
+    "description": "Double espresso shot blended with dense milk and vanilla cream. Smooth, bold, and energizing.",
     "price": 119,
     "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80",
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "temperature": "iced",
+    "tastingNotes": "Double Espresso • Creamy Milk • Chilled Kick",
+    "options": ["Regular Sweet", "Strong Coffee Kick"]
   },
   {
     "id": "s05",
     "name": "Butterscotch Shake",
     "category": "Shakes",
-    "description": "Caramelized butterscotch with vanilla ice cream and crunchy bits.",
+    "description": "Brown butter caramel sauce with crunchy praline bits churned into creamy frozen dairy.",
     "price": 139,
-    "image": "/images/menu/butterscotch-shake.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Caramelized Toffee • Crunchy Praline • Cream",
+    "options": ["Thick Shake", "Extra Crunch"]
   },
   {
     "id": "s06",
     "name": "Belgian Chocolate",
     "category": "Shakes",
-    "description": "Premium Belgian dark chocolate melted into thick, creamy shake heaven.",
+    "description": "70% dark Belgian cocoa melted and whipped into a velvety, bittersweet chocolate experience.",
     "price": 159,
-    "image": "/images/menu/belgian-chocolate.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "70% Dark Cocoa • Bittersweet • Silk Texture",
+    "options": ["Thick Shake", "Double Dark"]
   },
   {
     "id": "j01",
     "name": "Fresh Orange Juice",
     "category": "Juices",
-    "description": "Hand-squeezed orange juice, no sugar added. Pure and natural.",
+    "description": "Hand-pressed Nagpur oranges with pulp, zero added sugar or artificial preservatives.",
     "price": 89,
-    "image": "/images/menu/orange-juice.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1622597467836-f38240662c8b?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Fresh Squeezed • Natural Citrus • 100% Pure",
+    "options": ["With Pulp", "Strained"]
   },
   {
     "id": "j02",
     "name": "Watermelon Splash",
     "category": "Juices",
-    "description": "Chilled watermelon blended with mint and a squeeze of lime.",
+    "description": "Chilled crimson watermelon cubes cold-pressed with garden mint and a pinch of black salt.",
     "price": 99,
-    "image": "/images/menu/watermelon-splash.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Hydrating Melon • Fresh Mint • Himalayan Salt",
+    "options": ["Chilled", "Extra Mint"]
   },
   {
     "id": "j03",
     "name": "Mixed Fruit Punch",
     "category": "Juices",
-    "description": "Seasonal fruits blended together for a vitamin-packed punch.",
+    "description": "Fresh apple, pomegranate, pineapple, and sweet orange cold-pressed for maximum immunity and energy.",
     "price": 109,
-    "image": "/images/menu/mixed-fruit.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Seasonal Blend • Pomegranate • Natural Sugar",
+    "options": ["No Added Sugar", "Regular"]
   },
   {
     "id": "j04",
     "name": "Pineapple Punch",
     "category": "Juices",
-    "description": "Tangy pineapple with a hint of ginger. Bold and tropical.",
+    "description": "Ripe golden pineapple juice pressed with raw ginger extract and sparkling mineral water.",
     "price": 99,
-    "image": "/images/menu/pineapple-punch.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Tropical Pineapple • Ginger Accent • Crisp",
+    "options": ["Fresh Pressed", "Spicy Salted"]
   },
   {
     "id": "j05",
     "name": "Sweet Lime Soda",
     "category": "Juices",
-    "description": "Fresh mosambi with soda, salt, and a dash of chaat masala.",
+    "description": "Fresh Mosambi juice fizzed with soda water, rock salt, and toasted cumin sprinkle.",
     "price": 79,
-    "image": "/images/menu/sweet-lime.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "iced",
+    "tastingNotes": "Sweet & Salty • Chaat Cumin • Refreshing",
+    "options": ["Sweet & Salty", "Pure Sweet", "Pure Salty"]
   },
   {
     "id": "n01",
     "name": "Classic French Fries",
     "category": "Snacks",
-    "description": "Golden crispy fries with signature 90ML seasoning.",
+    "description": "Thick-cut golden russet potatoes double fried for a crunch exterior and fluffy interior, with 90ML spice dusting.",
     "price": 99,
-    "image": "/images/menu/french-fries.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Crisp Golden • Secret Seasoning • Garlic Mayo Dip",
+    "options": ["Classic Salted", "Peri-Peri Spicy 🌶"]
   },
   {
     "id": "n02",
     "name": "Loaded Nachos",
     "category": "Snacks",
-    "description": "Crunchy nachos topped with cheese sauce, jalapeños, and salsa.",
+    "description": "Crispy corn tortilla chips drowned in warm Mexican cheese sauce, pickled jalapeños, and chunky tomato salsa.",
     "price": 149,
     "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&q=80",
-    "tags": ["bestseller", "spicy"]
+    "tags": ["bestseller", "spicy"],
+    "temperature": "hot",
+    "tastingNotes": "Warm Cheese Sauce • Jalapenos • Fresh Salsa",
+    "options": ["Full Loaded", "Extra Cheese +₹30"]
   },
   {
     "id": "n03",
     "name": "Veg Burger",
     "category": "Snacks",
-    "description": "Crispy aloo tikki patty with lettuce, cheese, and tangy mayo.",
+    "description": "Handmade spiced potato-herb patty inside toasted sesame brioche with cheddar cheese, crunchy onions, and tangy mayo.",
     "price": 129,
-    "image": "/images/menu/veg-burger.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Crispy Herb Patty • Melted Cheese • Brioche",
+    "options": ["Single Patty", "Double Cheese +₹25"]
   },
   {
     "id": "n04",
     "name": "Paneer Tikka Wrap",
     "category": "Snacks",
-    "description": "Spicy tandoori paneer wrapped in soft tortilla with mint chutney.",
+    "description": "Marinated tandoori cottage cheese cubes flame-roasted and wrapped in soft tortilla with mint chutney and pickled onions.",
     "price": 149,
-    "image": "/images/menu/paneer-wrap.webp",
-    "tags": ["spicy"]
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80",
+    "tags": ["spicy"],
+    "temperature": "hot",
+    "tastingNotes": "Tandoori Paneer • Mint Chutney • Flaky Wrap",
+    "options": ["Medium Spicy", "Extra Spicy 🌶"]
   },
   {
     "id": "n05",
     "name": "Pasta Alfredo",
     "category": "Snacks",
-    "description": "Creamy white sauce pasta with herbs and parmesan.",
+    "description": "Penne pasta simmered in rich garlic parmesan cream sauce with Italian oregano and black pepper garnish.",
     "price": 159,
-    "image": "/images/menu/pasta-alfredo.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Garlic Cream • Parmesan • Herb Garnish",
+    "options": ["Classic Alfredo", "Spicy Arrabbiata Mix"]
   },
   {
     "id": "n06",
     "name": "Garlic Bread",
     "category": "Snacks",
-    "description": "Toasted garlic bread with herb butter and melted cheese.",
+    "description": "Artisan baguette toasted with garlic butter, dried Italian herbs, and stringy mozzarella melt.",
     "price": 99,
-    "image": "/images/menu/garlic-bread.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "hot",
+    "tastingNotes": "Garlic Herb Butter • Melted Mozzarella • Crusty",
+    "options": ["With Cheese", "Spicy Herb"]
+  },
+  {
+    "id": "n07",
+    "name": "Veg Grilled Sandwich",
+    "category": "Snacks",
+    "description": "Crisp grill-pressed bread stuffed with spiced potatoes, crunchy bell peppers, mint spread, and melted cheese.",
+    "price": 70,
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "hot",
+    "tastingNotes": "Toasted Golden • Herb Mint Spread • Veggie Crunch",
+    "options": ["Standard", "Extra Cheese +₹30"]
   },
   {
     "id": "c01",
     "name": "Student Combo",
     "category": "Combos",
-    "description": "Any shake + french fries. Show student ID for this special price.",
+    "description": "Any thick shake of your choice paired with hot golden French fries. Show student ID at counter.",
     "price": 99,
-    "image": "/images/menu/student-combo.webp",
-    "tags": ["bestseller"]
+    "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&q=80",
+    "tags": ["bestseller"],
+    "temperature": "all",
+    "tastingNotes": "Any Shake + Fries • Student ID Required",
+    "options": ["Oreo + Fries", "Cold Coffee + Fries"]
   },
   {
     "id": "c02",
     "name": "Couple Combo",
     "category": "Combos",
-    "description": "2 signature mocktails + loaded nachos. Perfect for date night.",
+    "description": "2 signature crafted mocktails of your choice served with a giant platter of loaded cheesy nachos. Built for date night.",
     "price": 349,
-    "image": "/images/menu/couple-combo.webp",
-    "tags": ["new"]
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80",
+    "tags": ["new"],
+    "temperature": "all",
+    "tastingNotes": "2 Signature Drinks + Loaded Nachos",
+    "options": ["Mojito & Blue Lagoon", "Special & Sunset"]
   },
   {
     "id": "c03",
     "name": "Squad Combo",
     "category": "Combos",
-    "description": "4 shakes + 2 snacks of your choice. Bring the whole gang.",
+    "description": "4 thick shakes + 2 large snack platters of your choice. Designed for study groups and weekend celebrations.",
     "price": 599,
-    "image": "/images/menu/squad-combo.webp",
-    "tags": []
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80",
+    "tags": [],
+    "temperature": "all",
+    "tastingNotes": "4 Shakes + 2 Snacks • Group Table Favorite",
+    "options": ["Squad Mix 1", "Squad Mix 2"]
   }
 ]
